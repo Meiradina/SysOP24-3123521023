@@ -3,9 +3,9 @@
 
 Power ON adalah proses awal pada saat menyalakan komputer, yaotu pada saat menekan tombol ON, untuk memulai proses boot. 
 
-Boot adalah proses dimana saat sistem komputer akan membaca seluruh hardware dan software guna memastikan bahwa komputer siap dinyalakan.
-
 BIOS / POST (Power On Self Test): adalah prosesTahapan yang paling awal adalah menyalakan komputer dengan menekan tombol ON pada CPU yang mana akan menyuplai listrik ke komponen-komponen utama komputer.
+
+Boot adalah proses dimana saat sistem komputer akan membaca seluruh hardware dan software guna memastikan bahwa komputer siap dinyalakan.
 
 Bootloader :Yaitu tahap mencari sistem operasi pada hard drive dan mulai memuat sistem operasi yang ditemukan, seperti Linux, macOS, atau Windows.
 
