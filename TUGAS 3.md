@@ -13,12 +13,10 @@
    c. Execute 
   CPU melakukan operasi atau tindakan yang ditentukan oleh intruksi setelah Decode. Operasi tersebut dapat melibatkan penggunakan ALU(Arithmetic Logic Unit), pengambilan data dari register, atau bisa saja interaksi dengan perangkat I/0.
 
-  - Komponen Utama CPU
+## Komponen Utama CPU
 
-    ALU: Bertanggung jawab untuk operasi matematika dan logika.
-
-    Register: Tempat penyimpanan sementara untuk data dan instruksi.
-
-    Control Unit: Mengkoordinasikan aktivitas CPU. 
+  - ALU: Bertanggung jawab untuk operasi matematika dan logika.
+  - Register: Tempat penyimpanan sementara untuk data dan instruksi.
+  - Control Unit: Mengkoordinasikan aktivitas CPU. 
       
    
