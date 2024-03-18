@@ -17,6 +17,8 @@
 
   - ALU: Bertanggung jawab untuk operasi matematika dan logika.
   - Register: Tempat penyimpanan sementara untuk data dan instruksi.
-  - Control Unit: Mengkoordinasikan aktivitas CPU. 
-      
+  - Control Unit: Mengkoordinasikan aktivitas CPU.
+
+3. Lakukan clone ke github. Compile dan eksekusi sesuai petunjuk.
+   
    
