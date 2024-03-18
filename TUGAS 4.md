@@ -6,9 +6,9 @@
 
 1. Apa yang dimaksud redirection? <br> 
    Redirection adalah proses mengubah sumber input atau tujuan output standar dari suatu perintah. Dalam sistem operasi berbasis Unix, setiap perintah diinisialisasi dengan tiga aliran data standar: satu aliran input (standard input), dan dua aliran output (standard output dan standard error). Aliran ini secara default terhubung ke konsol (keyboard dan layar teks). <br> 
-3. Apa yang dimaksud pipeline? <br>
+2. Apa yang dimaksud pipeline? <br>
    Pipeline adalah konsep yang memungkinkan eksekusi intruksi atau operasi secara efisien dan terkoordinasi. Biasanya melibatkan beberaoa tahap dan fase, dimana setiap tahap memproses data atau intruksi dan akan mengirimlannya ke tahap berikutnya pada pipeline. Ini memungkinkan untuk eksekusi paralel dan seringkali asinkron, di mana setiap tahap dapat bekerja secara independen sambil memanfaatkan data yang sedang diproses oleh tahap sebelumnya. <br> 
-5. Apa yang dimaksud perintah di bawah ini : <br> 
+3. Apa yang dimaksud perintah di bawah ini : <br> 
     echo, cat, more, sort, grep, wc, cut, uniq <br>
    * echo : Untuk menampilkan text. 
    * cat : Untuk melihat isi file. 
@@ -35,7 +35,7 @@
     ![WhatsApp Image 2024-03-18 at 21 56 11_6d69e0bf](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/f78053f9-15f1-47d6-91b9-d673d202eced)
    Analisa : Menunjukkan bahwa proses identity 4699 dan 4793 dengan 0, pada cmd bash dan ps. 
 
-3. Output ke layar (standar output), input dari keyboard (standard input)
+2. Output ke layar (standar output), input dari keyboard (standard input)
    ```
     $ cat
     hallo, apa khabar
@@ -47,7 +47,7 @@
    ![WhatsApp Image 2024-03-18 at 21 58 23_79712084](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/ff456ca7-7614-425d-a87c-38a7ab0f90d1)
    Analisa : Penulisan dasar di keyboard, untuk mengakhiri inputan dengan menekan tombol ctrl+d maka akan otomatis kembali ke path root.
 
-5. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
+3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
    ```
    $ mkdir mydir
    $ mkdir mydir **(Terdapat pesan error)**
@@ -64,7 +64,7 @@
    ![WhatsApp Image 2024-03-18 at 21 59 38_2bc80888](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/f8bf43d4-c937-4aa7-ba5e-fefeca3e3090)
    Analisa : Membuat file baru dengan ekstensi txt, isi file yang diinputkan adalah “ini adalah teks yang saya simpan ke file myfile.txt” 
 
-3. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
+2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
    ```
     $ cat 0< myfile.txt
     $ cat myfile.txt
@@ -72,7 +72,7 @@
    ![WhatsApp Image 2024-03-18 at 22 00 00_c72261b6](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/80ef8c4e-cc94-43ab-bd36-665ea1c3aef0)
    Analisa : Perintah cat myfile.txt adalah perintah untuk menampilkan isi file yang telah dibuat.
 
-5. Pembelokan standar error untuk disimpan di file
+3. Pembelokan standar error untuk disimpan di file
    ```
     $ mkdir mydir (Terdapat pesan error)
     $ mkdir mydir 2> myerror.txt
@@ -81,7 +81,7 @@
    ![WhatsApp Image 2024-03-18 at 22 10 05_11633f65](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/f05221ca-6af9-412c-b23c-26ee61580d2b)
    Analisa :  2> merupakan metode pembelokan standar error untuk kemudian disimpan di file. Apabila Ketika membuat direktori yang telah dibuat “mkdir mydir” akan terjadi pesan error.
 
-7. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
+4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
    ```
     $ ls filebaru (Terdapat pesan error)
     $ ls filebaru 2> out.txt
@@ -92,7 +92,7 @@
    ![WhatsApp Image 2024-03-18 at 22 11 03_a68fc6ef](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/2e2faa34-f8a1-4408-acdb-e106e42cfff4)
    Analisa : Terjadi error karena file baru tidak ada didalam direktori, sehingga tidak ada yang   dibelokkam ke out.txt.
 
-9. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
+5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
    ```
    $ echo “mencoba menulis file” 1> baru
    $ cat filebaru 2> baru 1>&
@@ -102,7 +102,7 @@
    Analisa : Pada percobaan diatas,kalimat yang dibelokkan ke output dengan perintah echo adalah filebaru. Namun selanjutnya filebaru tersebut isinya tertindih oleh pesan error hasil pembelokan dari perintah cat filebaru yang gagal dilaksanakan.
 
 
-11. Notasi >> (append)
+6. Notasi >> (append)
    ```
    $ echo “kata pertama” > surat
    $ echo “kata kedua” >> surat
@@ -115,7 +115,7 @@
    Analisa : Pada penggunaan karakter > digunakan untuk membelokkan output dari echo menjadi sebuah filebaru bernama surat. Penggunaan karakter >> digunakan untuk menyisipkan output dari echo di kelanjutan isi dari file tujuan.
 
 
-11. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
+7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
    ```
    $ cat <<++
    Hallo, apa kabar?
@@ -131,7 +131,7 @@
    ![WhatsApp Image 2024-03-18 at 22 17 53_334e03f5](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/7b870ed4-dd24-4ccf-82df-4954f8176069)
    Analisa : Dengan menggunakan notasi here document saat melakukan perintah cat, kita tidak perlu lagi menekan ctrl+d untuk keluar dari editor untuk menyimpan teks.
 
-11. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
+8.  Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
   ```
   $ cat myfile.txt – surat
   ```
@@ -154,7 +154,7 @@ Analisa : Perintah ini akan menampilkan isi file satu persatu sesuai dengan urut
    ![WhatsApp Image 2024-03-18 at 22 21 25_018c2cb3](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/8acf4b4c-61ed-4e9b-99a8-b40c2cde5f62)
    Analisa : Perintah who yang diberi pipe sort akan membuat data yang ditampilkan secara urut. Perintah pipe more digunakan untuk menampilkan file lengkap beserta atributnya.Perintah pipe sort dan more digunakan untuk menampilkan file dan atribut secara lengkap dan ditampilkan secara urut.
 
-3. Untuk membelokkan standart output ke file, digunakan operator ">"
+2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
    $ echo hello
    $ echo hello > output
@@ -163,7 +163,7 @@ Analisa : Perintah ini akan menampilkan isi file satu persatu sesuai dengan urut
    ![WhatsApp Image 2024-03-18 at 22 34 54_654dee0a](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/d5578a29-24f4-4cdd-8215-bc6f036f2fef)
    Analisa : Perintah echo akan menampilkan kata hello ke terminal. Selanjutnya kata hello akan dibelokkan ke output dan output dibaca akan muncul kata hello. 
    
-5. Untuk menambahkan output ke file digunakan operator ">>"
+3. Untuk menambahkan output ke file digunakan operator ">>"
    ```
    $ echo bye >> output
    $ cat output
@@ -171,14 +171,14 @@ Analisa : Perintah ini akan menampilkan isi file satu persatu sesuai dengan urut
    ![WhatsApp Image 2024-03-18 at 22 35 24_f581c63a](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/7a7b8179-75c4-4f5e-a3e5-f85ad9d1052a)
    Analisa : Dengan menggunakan operator >> akan menambahlan kata bye pada output.
 
-7. Untuk membelokkan standart input digunakan operator "<"
+4. Untuk membelokkan standart input digunakan operator "<"
    ```
    $ cat < output
    ```
    ![WhatsApp Image 2024-03-18 at 22 35 42_ef730020](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/05b015ad-35eb-409c-a1b6-c5f604cbb0da)
    Analisa : Perintah cat < output akan menampilkan output semua kata” yang telah di inputkan sebelumnya pada terminal.
 
-9. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
+5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
    ```
    $ cat < output > out
    $ cat out
@@ -221,15 +221,30 @@ Analisa : Perintah ini akan menampilkan isi file satu persatu sesuai dengan urut
    ![WhatsApp Image 2024-03-18 at 22 52 47_3d21b520](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/d80e3a9f-1fb3-4907-9807-7cdf4bd43353)
    ![WhatsApp Image 2024-03-18 at 22 47 15_86cffcd9](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/a7283229-28db-4ce5-819c-a02f8b5d4f14)
    ![WhatsApp Image 2024-03-18 at 22 47 36_5fe7b8b6](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/1e06765b-2a04-43b2-ae10-03987bcc0eb2)
-   Analisa : Penggunaan filter w -h | grep digunakan untuk menyaring informasi user.Penggunaanfilter ls /etc | wc digunakan untuk menampilkan jumlah baris,kata dan byte yang ada didalam direktori /etc. Perintah sort digunakan untuk mengurutkan data. Perintah uniq digunakan untuk menghilangkan duplikasi.
+   Analisa : Penggunaan filter w -h | grep digunakan untuk menyaring informasi user.Penggunaan  filter ls /etc | wc digunakan untuk menampilkan jumlah baris,kata dan byte yang ada didalam direktori /etc. Perintah sort digunakan untuk mengurutkan data. Perintah uniq digunakan untuk menghilangkan duplikasi.
 
 ## LATIHAN:
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output   ke file baru.
+![WhatsApp Image 2024-03-19 at 05 05 22_265ae78a](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/b0b2bd09-e0b8-46ab-9d2a-1399f3be4134)
+Analisa : Untuk melihat daftar direktori aktif, gunakan perintah $ ls, sedangkan untuk membelokkan tampilan standard output ke file baru, gunakan ‘>
+
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
+   ![WhatsApp Image 2024-03-19 at 05 05 51_992136a9](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/1d12db9e-befb-48b1-8373-07eb911e97fa)
+   Analisa : Untuk melihat daftar lengkap dari direktori /etc/passwd, gunakan perntah $ ls, sedangkan untuk membelokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya, gunakan ‘>>’
+
 3. Urutkan file baru dengan cara membelokkan standard input.
+   ![WhatsApp Image 2024-03-19 at 05 06 25_4f7d09f4](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/3cd7a954-9f1c-49c3-8266-63aab026a9a5)
+   Analisa : Untuk mengurutkan file, gunakan perintah $ sort, sedangkan untuk membelokkan standard input, gunakan ‘<’
+
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
+   ![WhatsApp Image 2024-03-19 at 05 06 45_59a7c2b2](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/463e1c4f-1528-4a25-a645-478a4cb9452d)
+   Analisa : Untuk mengurutkan file, gunakan perintah $ sort, sedangkan untuk membelokkan standard input, gunakan ‘’. Pembelokan standart input dan standart output dapat dikombinasikan asalkan tidak boleh menggunakan nama file yang sama sebagai standart input dan output
+
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
+   ![WhatsApp Image 2024-03-19 at 05 07 13_a474b3fd](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/697f2833-4e97-4978-a295-f0692f3b3006)
+   Analisa : Gunakan perintah $ mkdir untuk membuat direktori baru. Saat membuat direktori yang sama sebanyak dua kali, akan muncul pesan error. Pesan error itu kemudian dibelokkan ke file dengan menggunakan ‘2>’
+
 6. Urutkan kalimat berikut :
    ```
    Jakarta
@@ -240,9 +255,15 @@ Analisa : Perintah ini akan menampilkan isi file satu persatu sesuai dengan urut
    Lampung
    ```
   Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
+  ![WhatsApp Image 2024-03-19 at 05 07 37_4a5e3260](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/c7fa5a4b-0b66-4697-9873-16ef630c1841)
+  Analisa : Pertama, buat notasi here document yang akan dibelokkan ke sebuah file kemudian isi document tersebut. Setelah diisi dan diakhiri, isi dokumen akan tersimpan ke file yang dibelokkan. File tersebut kemudian diurutkan menggunakan perintah $ sort.
+
   
 
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
+   ![WhatsApp Image 2024-03-19 at 05 08 16_289aa091](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/5e4afe77-18bc-46e1-8d9d-9936519c89d2)
+   Analisa : Untuk mendapatkan jumlah baris, kata, dan karakter (secara berurutan) dari sebuah file, gunakan perintah wc yang dipipakan dengan perintah cat. Hasilnya kemudian bisa ditambahkan ke file menggunakan ‘>>’
+
 8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
     $ cat > hello.txt
@@ -256,6 +277,14 @@ Analisa : Perintah ini akan menampilkan isi file satu persatu sesuai dengan urut
     $ cat hello.txt | sort | uniq
     $ cat hello.txt | grep “dog” | grep –v “cat”
    ```
+   ![WhatsApp Image 2024-03-19 at 05 08 46_db9c1890](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/40feda4b-a431-4f4e-9fab-e49b00608a27)
+   Analisa : Uniq digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, Grep digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan. Pola ini disebut regular expression. Salah satu regular expression dari grep adalah -v (invert0match), yang akan menampilkan baris yang TIDAK mengandung pola yang ditentukan.
+
+### Kesimpulan 
+ 
+Pada Linux, terdapat metode File Descriptor, Redirection, Pipelining, dan filter. File descriptor merupakan cara Linux berkomunikasi dengan file. File descriptor direpresentasikan melalui angka yang dimulai dari 0, 1, 2 dan seterusnya. Redirection adalah pembelokan yang dilakukan untuk standar input, output, dan error dan untuk mengalihkan file descriptor dari 0, 1, dan 2. Pipeline adalah suatu mekanisme pipa yang digunakan sebagai alat komunikasi antar proses. Sedangkan filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard) dan menampilkan hasilnya pada standard output (layar). 
+
+
 ## LAPORAN RESMI:
 
 1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan    tampilannya.
