@@ -29,12 +29,35 @@
   - $ sudo make uninstall
     ![WhatsApp Image 2024-03-18 at 15 04 41_810e98bc](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/97a199c7-0f04-48e7-8e5d-0bd5f93b91bb)
 
+### Percobaan 1
   - $ iops64 $(nproc)
-    
-     ![WhatsApp Image 2024-03-18 at 15 11 01_197cf035](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/4d783078-f831-418d-8976-792aefa3266a)
-    
   - $ flops64 $(nproc)
-    ![WhatsApp Image 2024-03-18 at 15 12 25_cb6a4880](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/6310426b-8b63-41b2-8586-4b1f1bb6eea9)
+    ![WhatsApp Image 2024-03-18 at 15 29 20_df8858c8](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/13b4a9b8-15cc-4fed-b7dd-2c4fabec06f3)
+
+ ### Percobaan 2
+  - $ iops64 $(nproc)
+  - $ flops64 $(nproc)
+    ![WhatsApp Image 2024-03-18 at 15 29 59_9db3b945](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/128335b5-3ddb-4dfb-8bde-b278a06ef475)
+
+ ### Percobaan 3
+  - $ iops64 $(nproc)
+  - $ flops64 $(nproc)
+    ![WhatsApp Image 2024-03-18 at 15 35 37_65854ab0](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/b90c6cc5-273f-4001-8e61-aff0b44c141f)
+
+ ### Percobaan 4
+  - $ iops64 $(nproc)
+  - $ flops64 $(nproc)
+    ![WhatsApp Image 2024-03-18 at 15 38 47_de2302e9](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/87c37058-b2da-4b29-afe1-f0333e71aa57)
+
+
+ ### Percobaan 5
+  - $ iops64 $(nproc)
+  - $ flops64 $(nproc)
+    ![WhatsApp Image 2024-03-18 at 15 42 29_0740704e](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/46688e21-ae42-4850-b1a7-5429fbd9cc1d)
+
+    
+
+
 
 
 
