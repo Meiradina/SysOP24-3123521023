@@ -21,5 +21,22 @@
 
 
   3. Lakukan clone ke github. Compile dan eksekusi sesuai petunjuk.
+     ![WhatsApp Image 2024-03-18 at 14 54 38_10478118](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/38ecb322-6b3a-4026-9f36-5191d76258a2)
+
+  - $ make
+  - $ make clean
+  - $ sudo make istall
+  - $ sudo make uninstall
+    ![WhatsApp Image 2024-03-18 at 15 04 41_810e98bc](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/97a199c7-0f04-48e7-8e5d-0bd5f93b91bb)
+
+  - $ iops64 $(nproc)
+    ![WhatsApp Image 2024-03-18 at 15 11 01_197cf035](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/4d783078-f831-418d-8976-792aefa3266a)
+    
+  - $ flops64 $(nproc)
+    ![WhatsApp Image 2024-03-18 at 15 12 25_cb6a4880](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/6310426b-8b63-41b2-8586-4b1f1bb6eea9)
+
+
+
+
    
    
