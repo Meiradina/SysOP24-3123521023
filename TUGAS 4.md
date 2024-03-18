@@ -235,15 +235,15 @@ Analisa : Untuk melihat daftar direktori aktif, gunakan perintah $ ls, sedangkan
 
 3. Urutkan file baru dengan cara membelokkan standard input.
    ![WhatsApp Image 2024-03-19 at 05 06 25_4f7d09f4](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/3cd7a954-9f1c-49c3-8266-63aab026a9a5)
-   Analisa : Untuk mengurutkan file, gunakan perintah $ sort, sedangkan untuk membelokkan standard input, gunakan ‘<’
+   Analisa : mengurutkan file menggunakan perintah $ sort, sedangkan untuk membelokkan standard input, gunakan ‘<’
 
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
    ![WhatsApp Image 2024-03-19 at 05 06 45_59a7c2b2](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/463e1c4f-1528-4a25-a645-478a4cb9452d)
-   Analisa : Untuk mengurutkan file, gunakan perintah $ sort, sedangkan untuk membelokkan standard input, gunakan ‘’. Pembelokan standart input dan standart output dapat dikombinasikan asalkan tidak boleh menggunakan nama file yang sama sebagai standart input dan output
+   Analisa : Mengurutkan file menggunakan perintah $ sort, sedangkan untuk membelokkan standard input, menggunakan ‘’. Pembelokan standart input dan standart output dapat dikombinasikan asalkan tidak boleh menggunakan nama file yang sama sebagai standart input dan output
 
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
    ![WhatsApp Image 2024-03-19 at 05 07 13_a474b3fd](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/697f2833-4e97-4978-a295-f0692f3b3006)
-   Analisa : Gunakan perintah $ mkdir untuk membuat direktori baru. Saat membuat direktori yang sama sebanyak dua kali, akan muncul pesan error. Pesan error itu kemudian dibelokkan ke file dengan menggunakan ‘2>’
+   Analisa : Menggunakan perintah $ mkdir untuk membuat direktori baru. Ketika membuat direktori nama yang sama, akan muncul pesan error. Pesan error itu kemudian dibelokkan ke file dengan menggunakan ‘2>’
 
 6. Urutkan kalimat berikut :
    ```
@@ -256,13 +256,13 @@ Analisa : Untuk melihat daftar direktori aktif, gunakan perintah $ ls, sedangkan
    ```
   Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
   ![WhatsApp Image 2024-03-19 at 05 07 37_4a5e3260](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/c7fa5a4b-0b66-4697-9873-16ef630c1841)
-  Analisa : Pertama, buat notasi here document yang akan dibelokkan ke sebuah file kemudian isi document tersebut. Setelah diisi dan diakhiri, isi dokumen akan tersimpan ke file yang dibelokkan. File tersebut kemudian diurutkan menggunakan perintah $ sort.
+  Analisa : Buat notasi here document yang akan dibelokkan ke sebuah file lalu isi document tersebut. Setelah diisi dan diakhiri, isi dokumen akan tersimpan ke file yang dibelokkan. File tersebut kemudian diurutkan menggunakan perintah $ sort.
 
   
 
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
    ![WhatsApp Image 2024-03-19 at 05 08 16_289aa091](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/5e4afe77-18bc-46e1-8d9d-9936519c89d2)
-   Analisa : Untuk mendapatkan jumlah baris, kata, dan karakter (secara berurutan) dari sebuah file, gunakan perintah wc yang dipipakan dengan perintah cat. Hasilnya kemudian bisa ditambahkan ke file menggunakan ‘>>’
+   Analisa : Untuk menghitung jumlah baris, kata, dan karakter (secara berurutan) dari sebuah file, gunakan perintah wc yang dipipakan dengan perintah cat. Kemudian Hhasilnya bisa ditambahkan ke file menggunakan ‘>>’
 
 8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
@@ -278,7 +278,7 @@ Analisa : Untuk melihat daftar direktori aktif, gunakan perintah $ ls, sedangkan
     $ cat hello.txt | grep “dog” | grep –v “cat”
    ```
    ![WhatsApp Image 2024-03-19 at 05 08 46_db9c1890](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/40feda4b-a431-4f4e-9fab-e49b00608a27)
-   Analisa : Uniq digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, Grep digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan. Pola ini disebut regular expression. Salah satu regular expression dari grep adalah -v (invert0match), yang akan menampilkan baris yang TIDAK mengandung pola yang ditentukan.
+   Analisa : Uniq digunakan untuk menghapus baris-baris berurutan yang mengalami duplikasi, sedangkan Grep digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan. Pola ini disebut regular expression. Salah satu regular expression dari grep adalah -v (invert0match), yang akan menampilkan baris yang TIDAK mengandung pola yang ditentukan.
 
 ### Kesimpulan 
  
