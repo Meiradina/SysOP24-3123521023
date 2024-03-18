@@ -19,6 +19,7 @@
   - Register: Tempat penyimpanan sementara untuk data dan instruksi.
   - Control Unit: Mengkoordinasikan aktivitas CPU.
 
-3. Lakukan clone ke github. Compile dan eksekusi sesuai petunjuk.
+
+  3. Lakukan clone ke github. Compile dan eksekusi sesuai petunjuk.
    
    
