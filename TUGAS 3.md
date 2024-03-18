@@ -1,6 +1,6 @@
 # Tugas 3
 
-1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program.
+## 1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program.
 
   Siklus CPU adalah proses repetitif yang dilakukan CPU untuk menjalankan intruksi program. Pada siklus CPU terdiri dari tiga tahap utama, yaitu Fetch, Decode, dan Execute. 
   
@@ -20,8 +20,8 @@
   - Control Unit: Mengkoordinasikan aktivitas CPU.
 
 
-  3. Lakukan clone ke github. Compile dan eksekusi sesuai petunjuk.
-     ![WhatsApp Image 2024-03-18 at 14 54 38_10478118](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/38ecb322-6b3a-4026-9f36-5191d76258a2)
+ ## 3. Lakukan clone ke github. Compile dan eksekusi sesuai petunjuk.
+  ![WhatsApp Image 2024-03-18 at 14 54 38_10478118](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/38ecb322-6b3a-4026-9f36-5191d76258a2)
 
   - $ make
   - $ make clean
@@ -55,7 +55,21 @@
   - $ flops64 $(nproc)
     ![WhatsApp Image 2024-03-18 at 15 42 29_0740704e](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/46688e21-ae42-4850-b1a7-5429fbd9cc1d)
 
-    
+## 4. Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya!
+
+- $ su -l
+- $ apt install make
+  
+  ![WhatsApp Image 2024-03-18 at 16 33 08_d9d71d77](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/487da140-7fc4-4d25-bb0b-d80eef956b14)
+
+- $ apt install git
+  
+  ![WhatsApp Image 2024-03-18 at 16 33 36_50fcfabf](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/d8614695-3c9b-4784-aa30-46490c128b1d)
+
+- $ apt install gcc
+  
+  ![WhatsApp Image 2024-03-18 at 16 34 01_0bfb4aec](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/0b8e0812-5024-4356-9b2e-e2b32dff3c7f)
+
 
 
 
