@@ -21,9 +21,39 @@
 
 ### Menjelaskan siklus CPU (fetch,decode,execute) dalam mengeksekusi sebuah program.
 
-  CPU atau Central Processing Unit yang terdapat pada PC, terhubung ke semua perangkat lain yang membuatnya menjadi berfungsi. 
-
+  CPU atau Central Processing Unit yang terdapat pada PC, terhubung ke semua perangkat lain yang membuatnya menjadi berfungsi. Sebagai contoh, pada video referensi 1, menggunakan jam untuk menghitung bagaimana CPU akan melewati langkah yang disebut siklus "Fetch-Execute". Dimana siklus tersebut terdiri dari proses Fetch - Decode - Execute.
 ![CPU1](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/f745f01b-3a01-4346-91fe-1835579a51bd)
+  Pada CPU, memiliki 3 register, yaitu Programme Counter untuk melacak siklus instruksi, Instruction Register untuk memuat instruksi dari memori, kemudian Accumulator. 
+  
+  Lalu, membuat tabel RAM(Memori Akses Acak) untuk menyimpan instruksi dan nilai apapun yang akhirnya dihitung. RAM juga digunakan untuk menyimpan jawaban akhir/nilai keluaran dari proses eksekusi ini. 
+ 
+  Pada setiap detik jam(click), CPU akan melakukan ketiga proses secara bergantian dan berulang. Berawal dari Fetch(mengambil intruksi dari alamat memori),Decode(memecahkan kode instruksi), dan kemudian Execute(menjalankan intruksi)
+  
+  1. Click pertama, Programme Counter diatur ke 0, sehingga CPU mengambil instruksi pada alamat 0 di memori lalu memasukkannya ke Instruction Register.
+![CPU2](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/59dde577-6299-4332-ac43-b528d5c69525)
+  2. Click kedua, berpindah ke Decode. CPU menerjemahkan instruksi. Intruksinya adalah LOAD dan alamatnya adalah 6. Jadi, CPU akan memuat nilai di alamat ke 6 ke dalam Accumulator.
+![CPU3](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/a31eb170-aa10-4790-924b-80ca096f1b92)
+  3. Click ketiga, hasil dari terjemahan CPU dari Decode tadi. Hasilnya adalah 1.
+![CPU4](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/707925a8-40de-4b3d-8f77-324c1d7b319d)
+  4. Click keempat, kembali ke Fetch. Penghitung program bertambah, dan CPU akan mengambil intruksi di bit memori berikutnya. 
+  ![CPU5](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/51facd1f-ec99-4ecd-a8a1-35514e93dc41)
+  5. Click Kelima, Decode. CPU kembali menerjemahkan intruksi, kali ini intruksinya ADD dan alamatnya adalah 7. 
+  ![CPU6](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/dc680dd4-e483-4365-9dbe-58f89293a527)
+  6. Click Keenam, Execute. CPU mengeksekusi intruksi, hasilnya adalah 1. Tetapi, karena pada accumulator sudah terdapat nilai 1, maka ditambahkan menjadi 2. 
+![CPU7](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/7d26ca62-f066-485d-b716-3cbc48b90df0)
+  7. Click Ketujuh, Fetch. Lokasi memori berikutnya yaitu no 2. 
+  ![CPU8](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/57a4a7b6-0b5e-44b8-9e61-bb32f0aaf982)
+  8. Click Kedelapan, Decode. Instruksi untuk STORE, memasukkan nilai yang ada di alamat 6 ke accumulator. 
+![CPU9](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/e965c9f2-ad2b-4da1-9a57-8b17d8c36538)
+  9. Click Kesembilan, Execute. Accumulator memuat nilai 2, maka alamat 6 sekarang memiliki nilai 2. 
+![CPU10](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/9cfb3365-2060-49e2-b605-2537c5ce930d)
+  10. Click Kesepuluh, Fetch. Meenggunakan intruksi baru, yaitu JUMP. Dengan menggunakan alamat sesuai dengan intruksi. 
+![CPU11](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/ca5ece1b-1e2a-46d8-83ca-97cebdd762c6)
+ 11. Click Kesebelas, Decode. JUMP ke alamat 1.
+ ![CPU12](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/7ea3c3f8-a8a3-4450-a759-9e7b647f9258)
+  12. Click Keduabelas, Execute. Programme Counter kembali ke 1. Maka proses akan kembali lagi berulang.
+![CPU13](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/df878b3b-48d7-46a7-8ab4-9de3806ec9cd)
+
 
 
 ### Menjelaskan peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operasi. 
