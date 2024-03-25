@@ -19,6 +19,13 @@
   - Register: Tempat penyimpanan sementara untuk data dan instruksi.
   - Control Unit: Mengkoordinasikan aktivitas CPU.
 
+### Menjelaskan siklus CPU (fetch,decode,execute) dalam mengeksekusi sebuah program.
+
+  CPU atau Central Processing Unit yang terdapat pada PC, terhubung ke semua perangkat lain yang membuatnya menjadi berfungsi. 
+
+![CPU1](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/f745f01b-3a01-4346-91fe-1835579a51bd)
+
+
 ### Menjelaskan peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operasi. 
 
 a. Bahasa Pemrograman
