@@ -29,8 +29,17 @@
   Analisa :
   Output dari fork03 hanya menampilkan proses dengan PID dari masing-masing.
 
+### Orphan.c
+![image](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/18da5ee5-5690-4c6c-95a9-e5a6c40d42ea)
+![image](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/57a278a1-184d-40c8-8c1f-96c0f0780d55)
+  Analisa : 
+  Output dari proses orphan.c adalah menjalankan parent process lalu setelah parent selesai akan berlanjut menjalankan child process. 
 
-
+### Zombie.c
+![image](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/40dce8aa-a94f-4adc-95f7-06f92b88b11d)
+![image](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/ebe0643f-8888-46f4-9893-f994283b9a56)
+  Analisa : 
+  Process ini terjadi karena adanya child process yang sudah terminated tanpa sepengetahuan parent process. Sehingga parent process tidak mencetak process yang masih dijalankan oleh child process. 
 
 
 
