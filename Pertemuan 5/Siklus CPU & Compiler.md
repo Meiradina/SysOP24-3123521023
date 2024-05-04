@@ -1,4 +1,4 @@
-# Tugas 3
+
 
 ## 1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program.
 
