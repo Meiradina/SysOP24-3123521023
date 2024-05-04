@@ -1,4 +1,4 @@
-# Operation System Boor Process
+# Operation System Boot Process
 ![WhatsApp Image 2024-03-03 at 14 54 01_cec33aa4](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/fb0995f4-fcb0-430e-8539-06432a524765)
 
 Power ON adalah proses awal pada saat menyalakan komputer, yaotu pada saat menekan tombol ON, untuk memulai proses boot. 
