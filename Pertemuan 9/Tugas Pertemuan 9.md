@@ -15,27 +15,28 @@ Perbedaan dari keduanya adalah :
   - Untuk menjalankan fork, lakukan perintah g++ fork01.cpp -o fork01.exe.
   Perintah tersebut digunakan untuk menjalankan program c++ pada fork01.cpp menggunakan compiler g++ dan menghasilkan output fork01.exe.
   Kemudian, untuk menjalankannya lakukan pperintah ./fork01.exe.
-- Fork01.c
+
+- Fork01.c <br> 
 ![image](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/ced88419-6af0-44ea-bddb-c316eb9574fd)
     - Analisa :
     Output setelah menjalankan fork01.exe yaitu menampilkan PID, PPID, dan UID secara berurutan. Setelah mencetak proses pertama, program akan berhenti selama 3 detik kemudian mencetak proses kedua. Berlanjut sampai program selesai mencetak 3 proses. Pada proses pertama, disebut child proses lalu proses kedua parent dan proses ketika merupalam owner proses. 
 
-- Fork02.c
+- Fork02.c<br>
 ![image](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/21934d0f-131f-4a03-a1d4-98a1646f3d8a)
   - Analisa :
   Output untuk fork02 adalah program melakukan proses berulang kali tanpa henti dengan menampilkan pesan yang mencatat PID masing-masing proses.
 
-- Fork03.c
+- Fork03.c<br>
 ![image](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/ddf97380-6d33-4e3d-917e-1623069bb687)
   - Analisa :
   Output dari fork03 hanya menampilkan proses dengan PID dari masing-masing.
 
-### Orphan.c
+### Orphan.c<br>
 ![image](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/57a278a1-184d-40c8-8c1f-96c0f0780d55)
   - Analisa : 
   Output dari proses orphan.c adalah menjalankan parent process lalu setelah parent selesai akan berlanjut menjalankan child process. 
 
-### Zombie.c
+### Zombie.c<br>
 ![image](https://github.com/Meiradina/SysOP24-3123521023/assets/160557713/ebe0643f-8888-46f4-9893-f994283b9a56)
   - Analisa : 
   Process ini terjadi karena adanya child process yang sudah terminated tanpa sepengetahuan parent process. Sehingga parent process tidak mencetak process yang masih dijalankan oleh child process. 
