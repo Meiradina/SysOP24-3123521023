@@ -1,4 +1,4 @@
-## THREAD
+## THREADS
 
 ### Practice Exercises
 
